@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		138309A56C1BFB8E8A36CAD5 /* Pods_HandwritingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62D7641D631E3520CF672DE /* Pods_HandwritingTests.framework */; };
+		534DA6372226184F003DB8F4 /* HTTPUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534DA6362226184F003DB8F4 /* HTTPUtils.swift */; };
 		D385558DAD75149F634F1073 /* Pods_HandwritingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B42882815AB9BBA4001A920D /* Pods_HandwritingUITests.framework */; };
 		E73747A1D809F688F9FE485B /* Pods_Handwriting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4762DEB7324272DD44697F9 /* Pods_Handwriting.framework */; };
 		FD1E49871F3D56C600EA67DF /* UIResponder-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1E49861F3D56C600EA67DF /* UIResponder-extension.swift */; };
@@ -66,6 +67,7 @@
 		0F8B068A38C8FD0F64EB08B7 /* Pods-HandwritingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandwritingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HandwritingTests/Pods-HandwritingTests.release.xcconfig"; sourceTree = "<group>"; };
 		1B3EAFB089252EAF8D0507BA /* Pods-HandwritingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandwritingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HandwritingUITests/Pods-HandwritingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		228D421BE528C49929BEAB0E /* Pods-Handwriting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Handwriting.release.xcconfig"; path = "Pods/Target Support Files/Pods-Handwriting/Pods-Handwriting.release.xcconfig"; sourceTree = "<group>"; };
+		534DA6362226184F003DB8F4 /* HTTPUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPUtils.swift; sourceTree = "<group>"; };
 		A58BCC94D7672AFFD200ED27 /* Pods-Handwriting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Handwriting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Handwriting/Pods-Handwriting.debug.xcconfig"; sourceTree = "<group>"; };
 		B42882815AB9BBA4001A920D /* Pods_HandwritingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandwritingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB273BF94A4302DE5EFB27C /* Pods-HandwritingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandwritingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HandwritingUITests/Pods-HandwritingUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 				FD5FCF671F35F83B000478F1 /* CGRect-extension.swift */,
 				FD5FCF6F1F370967000478F1 /* ShapeLayer-extension.swift */,
 				FD1E49861F3D56C600EA67DF /* UIResponder-extension.swift */,
+				534DA6362226184F003DB8F4 /* HTTPUtils.swift */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
@@ -594,6 +597,7 @@
 				FD5FCF5F1F341D51000478F1 /* HomeViewController.swift in Sources */,
 				FDF505E81F454229005307D9 /* levelCell.swift in Sources */,
 				FD1E49871F3D56C600EA67DF /* UIResponder-extension.swift in Sources */,
+				534DA6372226184F003DB8F4 /* HTTPUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

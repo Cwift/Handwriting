@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class LogInViewController: UIViewController {
 
@@ -22,16 +23,9 @@ class LogInViewController: UIViewController {
         if passwordTextField.text == "" {
             return
         }
-        let user = UserDefaults.standard
-        let name = nameTextField.text
-        let psd = passwordTextField.text
-        if let password = user.string(forKey: name!) {
-            if psd == password {
-                let uuid = UUID().uuidString
-                user.set(uuid, forKey: "uuid")
-                isLoged()
-            }
-        }
+        let name = nameTextField.text!
+        let psd = passwordTextField.text!
+        login(username: name, password: psd)
         
     }
     
@@ -69,6 +63,25 @@ class LogInViewController: UIViewController {
         user.set(uuid, forKey: "uuid")
         isLoged()
         
+    }
+    
+    func login(username: String, password: String) {
+
+        var params = [String: String]()
+        params["username"] = username
+        params["password"] = password
+        
+        Alamofire.request("http://192.168.211.1:8080/test/login", method: .get, parameters: params)
+            .responseJSON { (response) in
+                if let json = response.result.value as? Dictionary<String, Any> {
+                    self.user.set(json["name"]!, forKey: "name")
+                    let uuid = UUID().uuidString
+                    self.user.set(uuid, forKey: "uuid")
+                    self.isLoged()
+                }else {
+                    self.user.removeObject(forKey: "uuid")
+                }
+        }
     }
 
 }
